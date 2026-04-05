@@ -39,3 +39,10 @@ select {
 textarea {
   width: 100%;
 }
+
+article img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}

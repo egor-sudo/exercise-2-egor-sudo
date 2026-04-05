@@ -1,0 +1,85 @@
+<h1>Edit Movie</h1>
+
+<form>
+  <input type="hidden" id="imdbID">
+
+  <div>
+    <label>Title</label>
+    <input id="Title">
+  </div>
+
+  <div>
+    <label>Released</label>
+    <input id="Released">
+  </div>
+
+  <div>
+    <label>Runtime</label>
+    <input id="Runtime">
+  </div>
+
+  <div>
+    <label>Plot</label>
+    <textarea id="Plot"></textarea>
+  </div>
+
+  <div>
+    <label>Poster</label>
+    <input id="Poster">
+  </div>
+
+  <div>
+    <label>Rating</label>
+    <input id="imdbRating">
+  </div>
+
+  <div>
+    <label for="Genres">Genres</label>
+    <select id="Genres" multiple required>
+      <option value="Action">Action</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Animation">Animation</option>
+      <option value="Biography">Biography</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Crime">Crime</option>
+      <option value="Documentary">Documentary</option>
+      <option value="Drama">Drama</option>
+      <option value="Family">Family</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Film Noir">Film Noir</option>
+      <option value="History">History</option>
+      <option value="Horror">Horror</option>
+      <option value="Music">Music</option>
+      <option value="Musical">Musical</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Romance">Romance</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Short Film">Short Film</option>
+      <option value="Sport">Sport</option>
+      <option value="Superhero">Superhero</option>
+      <option value="Thriller">Thriller</option>
+      <option value="War">War</option>
+      <option value="Western">Western</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="Directors">Directors</label>
+    <input id="Directors" placeholder="Comma separated">
+  </div>
+
+  <div>
+    <label for="Writers">Writers</label>
+    <input id="Writers" placeholder="Comma separated">
+  </div>
+
+  <div>
+    <label for="Actors">Actors</label>
+    <input id="Actors" placeholder="Comma separated">
+  </div>
+
+  <button type="button" onclick="putMovie()">Save</button>
+  <button type="button" onclick="location.href='index.html'">Cancel</button>
+</form>
+
+<script src="edit.js"></script>
